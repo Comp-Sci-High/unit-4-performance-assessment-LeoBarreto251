@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderer | Adventure Found In-Between</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <nav class="flex justify-between items-center p-6 bg-white shadow-sm sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-tighter uppercase italic">Wanderer.</div>
+        <ul class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+            <li><a href="/overview" class="hover:text-amber-600 transition">Destinations</a></li>
+            <li><a href="#" class="hover:text-amber-600 transition">Guides</a></li>
+            <li><a href="#" class="hover:text-amber-600 transition">Gear</a></li>
+            <li><a href="#" class="hover:text-amber-600 transition">About</a></li>
+        </ul>
+        <button class="bg-stone-900 text-white px-5 py-2 text-xs uppercase tracking-widest hover:bg-amber-700 transition">Subscribe</button>
+    </nav>
+
+    <header class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">Est. 2024</span>
+            <h1 class="text-5xl md:text-7xl font-light mb-6">Adventure Found in the <br><span class="italic font-serif">In-Between</span></h1>
+            <p class="max-w-xl mx-auto text-lg text-stone-200 mb-8">Authentic guides, hidden gems, and the occasional missed flight. Exploring the world one story at a time.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#latest" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 transition">Read the Latest</a>
+                <a href="/overview" class="backdrop-blur-md border border-white/40 hover:bg-white/10 px-8 py-4 transition">View Destinations</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto py-20 px-6">
+        <h2 class="text-3xl font-serif mb-12 text-center">Featured Destinations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Kyoto" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl font-bold">Kyoto, Japan</h3>
+                <p class="text-stone-500 italic">The 4 AM Temple Run</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" alt="Italy" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl font-bold">Amalfi Coast</h3>
+                <p class="text-stone-500 italic">Pasta, Boats, and Sunsets</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1517757312657-3d67abd29b5c?auto=format&fit=crop&w=800&q=80" alt="Patagonia" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl font-bold">Patagonia</h3>
+                <p class="text-stone-500 italic">Hiking the End of the World</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-stone-900 text-white py-20 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-serif mb-4">Get the weekly "Postcard"</h2>
+            <p class="text-stone-400 mb-8">No spam. Just my secret packing lists and the stories that are too honest for Instagram.</p>
+            <form class="flex flex-col md:flex-row gap-2">
+                <input type="email" placeholder="Email Address" class="flex-1 px-6 py-4 bg-stone-800 border-none text-white focus:ring-2 focus:ring-amber-600 outline-none">
+                <button class="bg-amber-600 hover:bg-amber-700 px-8 py-4 uppercase tracking-widest transition">Join the Journey</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-stone-200 text-center text-sm text-stone-500 uppercase tracking-tighter">
+        <p>&copy; 2026 Wanderer Blog. Photos via Unsplash.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+/* Container & Header */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Grid Layout */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Repeatable Card Component */
+.post-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.category {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #e67e22;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.post-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.post-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 2px;
+}

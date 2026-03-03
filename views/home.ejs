@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Adventure Blog</title>
+    <link rel="stylesheet" href="overviewCSS.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Wanderlust</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li> <li><a href="#">Destinations</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Recent Journeys</h1>
+            <p>Exploring the world, one suitcase at a time.</p>
+        </header>
+
+        <section class="post-grid">
+            <%for (let i = 0; i < blogs.length;i++){%>
+            <article class="post-card">
+                <div class="post-image" style="background-image: url('<%= blogs[i].image%>');"></div>
+                <div class="post-content">
+                    <span class="category"> <%= blogs[i].country%> </span>
+                    <h2> <%= blogs[i].title%> </h2>
+                    <p> <%= blogs[i].descripiton%> </p>
+                    <a href="#" class="read-more">Read Story</a>
+                </div>
+            </article>
+           <%}%>
+            
+        </section>
+    </main>
+
+</body>
+</html>
